@@ -1,0 +1,61 @@
+package com.office.example;
+
+import java.util.Arrays;
+
+public class ArrayClass {
+	public static void main(String[] args) {
+		
+		/*
+		 배열(Array)
+		 * 여러 개의 같은 자료형 데이터를 하나의 변수에 묶어서 저장하는 자료구조이다.
+		 *
+		 * 배열 선언
+		 * 변수명 뒤에 []를 붙여 배열임을 나타낸다.
+		 *
+		 * 배열은 선언할 때 저장할 데이터의 자료형을 함께 지정한다.
+		 * 따라서 지정한 자료형의 데이터만 배열에 저장할 수 있다.
+		 * 
+		 * 배열 생성 3개
+		 * -
+		 * -
+		 * -
+		 * 
+		 */
+		
+		// 배열 선언 - I
+		int[] myScores = {90, 50, 100}; // 배열의 이름은 항상 복수로 
+		
+		System.out.println("myScores: " + myScores);
+		System.out.println("myScores[0]: " + myScores[0]);
+		
+		for (int i = 0; i < myScores.length; i++) {
+			System.out.println(myScores[i]);
+		}
+		
+		System.err.println(Arrays.toString(myScores));  // [90, 50, 100]
+		
+//		System.out.println(myScores[10]);
+		
+		myScores[2] = 1000;
+		System.out.println(myScores[2]);
+		System.err.println(Arrays.toString(myScores));
+		
+		// 배열 선언 - II
+		String[] myTools = new String[3];    // [ , , ]
+		myTools[0] = "지우개";
+		myTools[1] = "공책";
+		myTools[2] = "만년필";
+		
+		// 배열 선언 - III
+		float[] myFloats = new float[] {3.14f, 3.141592f, 3.141592876f};
+		
+		/*
+		 * 인덱스를 이용한 데이터 조회 및 수정
+		 * 배열이 만들어지면 바로 인덱스가 생성된다
+		 * 각 방에게 순서대로 번호를 부여
+		 * 인덱스 시작번호는 0
+		 * 마지막 번호는 전체 개수 보다 1이 작다
+		 */
+	}
+	
+}

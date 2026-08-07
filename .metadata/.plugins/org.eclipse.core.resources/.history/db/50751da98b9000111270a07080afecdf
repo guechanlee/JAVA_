@@ -1,0 +1,47 @@
+package com.office.example;
+
+public class Operator01 {
+	
+	public static void main(String[] args) {
+		
+		/*
+		 * 1. 연산자 란?
+		 * 각종 연산을 수행할 때 사용하는 '기호'이다.
+		 * - 연산자 종류
+		 * 	 : 산술 연산자 : +, -, *, /, %, ++, --
+		 * 	 : 할당 연산자 : =, +=, -=, *=, /=, %=
+		 * 	 : 비교 연산자 : ==, !=, >, <, >=, <=  
+		 * 	 : 논리 연산자 : %%, ||, !
+		 *   표에 명시한 연산자 말고도 조건 연산자,
+		 *   비트 연산자 그리고 연산자와 관련한 몇 가지 메서드가 있는데요,
+		 *   웹개발에도 몰라도 상관없다 
+		 *   
+		 *	연산식
+		 *	피연산자 연산자
+		 *
+		 * 2. 산술 연산자
+		 * 2-1. 숫자 덧셈(+)
+		 *  : 숫자를 덧셈할 때 사용한다.
+		 *  
+		 * 2-2. 문자 덧셈(+)
+		 *  : 문자열을 연결할 때 사용한다.
+		 */
+		
+		int num1 = 10;
+		int num2 = 20;
+		System.out.println("num1 + num2 = " + (num1 + num2));
+//		System.out.println("num1 + num2 = " + num1 + num2);
+		
+		float num3 = 0.1f;
+		float num4 = 0.2f;
+		System.out.println("num3 + num4 = " + (num3 + num4));
+		
+		
+	
+//		연산식
+//		피연산자 연산자
+		
+		
+	}
+	
+}

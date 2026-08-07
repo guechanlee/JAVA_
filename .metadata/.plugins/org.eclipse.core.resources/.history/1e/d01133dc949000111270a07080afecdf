@@ -1,0 +1,20 @@
+package com.office.example;
+
+public class Operator02 {
+
+	public static void main(String[] args) {
+		
+		/*
+		 * 3-1. 비교 연산자
+		 *  : >(크다), <(작다), >=(크거나같다), <=(작거나같다)
+		 *  : ==(같다), !=(같지않다)
+		 */
+		
+		int num1 = 100;
+		int num2 = 200;
+		
+		System.out.println(num1 > num2);  // false
+		
+	}
+	
+}

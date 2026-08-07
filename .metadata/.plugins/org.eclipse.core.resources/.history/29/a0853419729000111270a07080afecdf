@@ -1,0 +1,13 @@
+package com.office.example;
+
+public class stringFormat {
+
+	public static void main(String[] args) {
+	
+		/*
+		 * 형식 문자열 출력
+		 */
+		
+	}
+	
+}

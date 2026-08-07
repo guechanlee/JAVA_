@@ -1,0 +1,45 @@
+package com.office.example;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		
+		/*
+		 * 데이터 출력
+		 */
+		int num = 10;
+		
+		System.out.println("num: " + num);   // num: 10
+		System.out.println("num: " + num);   // num: 10
+		
+		System.out.print("num: \t\n " + num + "\n");    // num: 10
+		System.out.println("num: " + num);     	        // num: 10
+		
+		/*
+		 * 자주 쓰이는 특수문자들
+		 * 1. \n : 개행
+		 * 2. \t : 탭
+		 * 3. \' : 작은 따옴표(')
+		 * 4. \" : 큰 따옴표(")
+		 * 5. \\ : 역 슬래시(/)
+		 */
+		
+		System.out.println();
+		
+		System.out.print("이름\t학번\n");            // 이름     학번
+		System.out.print("Mr. H\t2020_000123\n");    // Mr. H  2020_000123
+		System.out.print("Mr. K\t2020_000124\n");    // Mr. H  2020_000123
+		
+		// 어머님께서는 "밥 먹고 설거지 해놔라" 라고 하셨습니다.
+		System.out.print("어머님께서는 \"밥 먹고 설거지 해놔라\" 라고 하셨습니다.\n");
+		
+		// //////////////////////////////////
+		// /// 2020-08-01 ///
+		// //////////////////////////////////
+		System.out.print("\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\n");
+		System.out.print("\\\\\\2020-08-01\\\\\\n");
+		System.out.print("\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\n");
+	}
+		
+}
+

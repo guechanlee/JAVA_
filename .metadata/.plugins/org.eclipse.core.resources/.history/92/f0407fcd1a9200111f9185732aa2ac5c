@@ -1,0 +1,11 @@
+package com.office.example;
+
+public class Example01 {
+
+	public static void main(String[] args) {
+		
+		Cat cat = new Cat();
+		
+	}
+		
+}

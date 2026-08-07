@@ -1,0 +1,49 @@
+package com.office.example;
+
+public class ArrayClass {
+
+	public static void main(String[] args) {
+
+		/*
+		 * ㅡㅡㅡㅡㅡㅡㅡㅡ배열 복사하는 사진 ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+		 * 변수는 배열의 첫번째 값을 얻는다
+		 * 메모리상  int형은 4byte임으로 4칸을 차지 한다
+		 * 인덱스 0부터 시작
+		 */
+
+		// 초기화 하지 않는 배열
+		int[] nums = new int[5];
+		System.out.println("num[0]: " + nums[0]);
+		System.out.println("num[1]: " + nums[1]);
+		System.out.println("num[2]: " + nums[2]);
+	 
+		// 배열생성하고 초기화하지 않으면 배열안에 0을 넣는다. 
+		//정수 -> 0
+		//실수 -> 0.0
+		//논리형 -> false
+		for (int num : nums) {
+			System.out.println("num: " + num);
+		}
+		
+		float[] floats = new float[3];
+		for (float f : floats) {
+			System.out.println("f: " + f);
+		}
+		
+		boolean[] flags = new boolean[3];
+		for (boolean b : flags) {
+			System.out.println("b: " + b);
+		}
+		
+		// 배열 복사
+		int number1 = 10;
+		int number2 = 20;
+		
+		System.out.println("number1: " + number1);
+		System.out.println("number2: " + number2);
+		
+		number2 = number1;
+		System.out.println("number2: " + number2);
+	}
+
+}

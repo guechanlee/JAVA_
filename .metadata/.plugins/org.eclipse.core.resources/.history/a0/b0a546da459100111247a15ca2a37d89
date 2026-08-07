@@ -1,0 +1,46 @@
+package com.office.example;
+
+import java.util.Scanner;
+
+public class Loop {
+	public static void main(String[] args) {
+		
+		/*
+		 * for문 & while문
+		 */
+		
+		//지역변수
+		//     초기화     조건식   증감식
+//		for (int i = 0; i < 11; i++) {
+//			System.out.println("i: " + i);
+//		}
+//		
+//		//전역변수
+//		int i = 0;
+//		for (; i < 11; i++) {
+//			System.out.println("i: " + i);
+//		}
+		
+//		for (int i = 0, j = 10; i < 11 && j > 5; i++, j--) {
+//			System.out.printf("i: %d \t j: %d \n", i, j);
+//		}
+		
+		/*
+		 * K마트에서 고객 감사 이벤트를 한다.
+		 * 5%할인 쿠폰 증정!
+		 * 쿠폰 개수는 사용자가 원하는 만큼
+		 * 단, 최대 쿠폰수는 1인당 5개
+		 */
+		
+		Scanner scanner = new Scanner(System.in);
+		int couponNum = scannner.nexInt();
+		
+		for (int i = 0, j = 5; i < couponNum && j > 0; i++, j--) {
+			System.out.println("쿠폰 발행");
+		}
+		
+		scanner.close();
+		
+		
+	}
+}

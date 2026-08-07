@@ -1,0 +1,17 @@
+package com.office.example;
+
+public class Person {
+
+	// 속성
+	String name;
+	int regNum;
+	
+	// 기능
+	void walk() {
+		
+	}
+	
+	void run() {
+		
+	}
+}

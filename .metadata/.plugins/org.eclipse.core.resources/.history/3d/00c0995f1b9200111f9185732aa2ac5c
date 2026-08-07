@@ -1,0 +1,22 @@
+package com.office.example;
+
+public class Cat {
+	
+	// 멤버 변수 == 속성 == attribute == 멤버 필드
+	String breed;
+	String color;
+	int age = 10;
+	
+	// 멤버 메서드 == 기능 == method
+	void eat() {
+		System.out.println("먹다.");
+	}
+	
+	void scratch() {
+		
+	}
+	
+	void meow() {
+		
+	}
+}

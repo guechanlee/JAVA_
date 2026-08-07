@@ -1,0 +1,29 @@
+package com.office.cal;
+
+public class Calculator {
+
+	void calculateAdd(int n1, int n2) {
+		System.out.println("[Calculate] calculateAdd() CALLED!!");
+		
+		CalculatorAdd caculatorAdd = new CalculatorAdd();
+	}
+	
+	void calculateSub(int n1, int n2) {
+		System.out.println("[Calculate] calculateSub() CALLED!!");
+		
+		CalculatorSub caculatorSub = new CaculatorSub();
+	}
+	
+	void calculateMul(int n1, int n2) {
+		System.out.println("[Calculate] calculateMul() CALLED!!");
+		
+		CalculatorMul calculatorMul = new CalculatorMul();
+	}
+	
+	void calculateDiv(int n1, int n2) {
+		System.out.println("[Calculate] calculateDiv() CALLED!!");
+		
+		CalculatorDib calculatorDiv = new CalculateDiv();
+	}
+	
+}

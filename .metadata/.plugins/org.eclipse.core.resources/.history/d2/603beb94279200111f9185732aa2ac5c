@@ -1,0 +1,55 @@
+package com.office.cal;
+
+import java.util.Scanner;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		
+		Calculator calculator = new Calculator();
+		
+//		calculator.calculateAdd(10, 20);
+//		calculator.calculateSub(10, 20);
+//		calculator.calculateMul(10, 20);
+//		calculator.calculateDiv(10, 20);
+		
+		while (true) {
+			System.out.println("1.덧셈    2.뺄셈    3.곱셈     4.나눗셈     99.시스템종료");
+		
+		
+		Scanner scanner = new Scanner(System.in);
+		int userSelectedMenuNumber = scanner.nextInt();
+		
+		int n1 = scanner.nextInt();
+		int n2 = scanner.nextInt();
+		int n3 = scanner.nextInt();
+		int n4 = scanner.nextInt();
+		
+		
+		
+			switch (userSelectedMenuNumber) {
+			case 1:
+				calculator.calculateAdd(n1, n2);
+				break;
+			case 2:
+				calculator.calculateSub(n1, n2);
+				break;
+			case 3:
+				calculator.calculateMul(n1, n2);
+				break;
+			case 4:
+				calculator.calculateDiv(n1, n2);
+				break;
+			case 99:
+				System.out.println("say god bye~~~~");
+				break;
+	
+	
+				
+		}
+		
+		scanner.close();
+		}
+	}
+	
+}

@@ -1,0 +1,16 @@
+package com.office.example;
+
+public class ClassEx001 {
+
+	public static void main(String[] args) {
+		// new Cat -> Cat class -> Cat 객체 생성
+		
+		// Cat class 내가 만든 데이터 타입이다
+		//cat1의 레퍼런스 변수에 데이터 타입은 Cat이다
+		Cat cat1 = new Cat(); 	// 객체 생성 at 메모리
+		
+		System.out.println("cat1: " + cat1);
+		System.out.println(cat1.breed);
+		//.도트
+	}
+}

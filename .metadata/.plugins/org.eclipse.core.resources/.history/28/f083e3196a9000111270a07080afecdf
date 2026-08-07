@@ -1,0 +1,14 @@
+package com.office.example;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		
+		/*
+		 * 데이터 출력
+		 */
+		System.out.println("안녕하세요.");
+		
+	}
+		
+}

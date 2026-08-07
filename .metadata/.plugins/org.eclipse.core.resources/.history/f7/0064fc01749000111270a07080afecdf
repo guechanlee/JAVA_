@@ -1,0 +1,40 @@
+package com.office.example;
+
+public class StringFormat {
+
+	public static void main(String[] args) {
+		
+		/*
+		 * 형식 문자열 출력
+		 * 1. System.out.printf();
+		 */
+		
+		String name = "Mr. Hong";
+		System.out.println("name: " + name);   // name: Mr. Hong
+		
+		System.out.printf("name: %s\n", name);
+		System.out.printf("name: %s", name);
+		
+		// %s --> 지정자
+		/*
+		 * 지정자 종류
+		 * 1. %d 			: 정수형 출력       *****
+		 * 2. %f  			: 실수형 출력		 *****
+		 * 3. %c 			: 문자형 출력		 *****
+		 * 4. %b 			: 논리형 출력	     *****
+		 * 5. %o			: 8진수형 출력
+		 * 6. %x 			: 16진수형 출력
+		 * 7. %n			: 개행 == \n       ***
+		 * 8. %s			: 문자열형 출력  	 *****
+		 */
+		
+		System.out.printf("이름 : %s%n", "Mr. Hong");
+		System.out.printf("성구분 : %c%n", "W");
+		System.out.printf("나이 : %d%n", 20);
+		System.out.printf("신장 : %f%n", 187.7);
+		System.out.printf("체중 : %f%n", 85.5);
+		System.out.printf("결혼유무 : %b%n", false);
+
+	}
+
+}

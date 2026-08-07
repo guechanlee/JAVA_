@@ -1,0 +1,25 @@
+package com.office.cal;
+
+public class Calculator {
+
+	void calculateAdd(int n1, int n2) {
+		System.out.println("[Calculate] calculateAdd() CALLED!!");
+		System.out.println("n1 + n2 = " + (n1 + n2));
+	}
+	
+	void calculateSub() {
+		System.out.println("[Calculate] calculateSub() CALLED!!");
+		System.out.println("n1 - n2 = " + (n1 - n2));
+	}
+	
+	void calculateMul() {
+		System.out.println("[Calculate] calculateMul() CALLED!!");
+		System.out.println("n1 * n2 = " + (n1 * n2));
+	}
+	
+	void calculateDiv() {
+		System.out.println("[Calculate] calculateDiv() CALLED!!");
+		System.out.println("n1 / n2 = " + (n1 / n2));
+	}
+	
+}

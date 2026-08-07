@@ -1,0 +1,15 @@
+package com.office.example;
+
+public class Contant {
+
+	public static void main(String[] args) {
+		
+		int num1 = 10; 		  // 변수 선언 및 초기화
+		final int NUM2 = 20;  // 상수 선언 및 초기화
+		
+		System.out.println("num1: " + num1);
+		System.out.println("NUM2: " + NUM2);
+		
+	}
+	
+}

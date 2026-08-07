@@ -1,0 +1,101 @@
+package com.office.example;
+
+import java.util.Scanner;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		
+		/*
+		 * 데이터 출력
+		 */
+		int num = 10;
+		
+		System.out.println("num: " + num);   // num: 10
+		System.out.println("num: " + num);   // num: 10
+		
+		System.out.print("num: \t\n " + num + "\n");    // num: 10
+		System.out.println("num: " + num);     	        // num: 10
+		
+		/*
+		 * 자주 쓰이는 특수문자들
+		 * 1. \n : 개행
+		 * 2. \t : 탭
+		 * 3. \' : 작은 따옴표(')
+		 * 4. \" : 큰 따옴표(")
+		 * 5. \\ : 역 슬래시(/)
+		 */
+		
+		System.out.println();
+		
+		System.out.print("이름\t학번\n");            // 이름     학번
+		System.out.print("Mr. H\t2020_000123\n");    // Mr. H  2020_000123
+		System.out.print("Mr. K\t2020_000124\n");    // Mr. H  2020_000123
+		
+		// 어머님께서는 "밥 먹고 설거지 해놔라" 라고 하셨습니다.
+		System.out.print("어머님께서는 \"밥 먹고 설거지 해놔라\" 라고 하셨습니다.\n");
+		
+		// //////////////////////////////////
+		// /// 2020-08-01 ///
+		// //////////////////////////////////
+		System.out.println("\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\");
+		System.out.println("\\\\\\2020-08-01\\\\\\");
+		System.out.println("\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\");
+		
+		/*
+		 * 데이터 입력
+		 * 데이터를 출력 System.out.println()
+		 * 데이터를 입력 System.in.read()  => Scanner
+		 */
+		
+		Scanner scanner = new Scanner(System.in);  //System.in -> 외부자원이랑 연결하는 것 (외부자원을 꼭 해제시켜야됌)
+//		
+//		String str = scanner.nextLine();      // 한 행씩 읽어올 수 있다.
+//		System.out.println("str: " + str);
+		
+		/*
+		 * Scanner에서 제공되는 메서드들은 어떤것들이 있을까요?
+		 * nextByte()	  : 정수(byte type) 입력
+		 * nextInt() 	  : 정수(int type) 입력                     ******
+		 * nextLong()	  : 정수(long type) 입력
+		 * nextFloat()    : 실수(float type) 입력                   ******
+		 * nextDouble()   : 실수(double type) 입력
+		 * nextLine()     : 문자열(String type) 입력                 ******
+		 * nextBooleean() : 논리(boolean type) 입력
+		 */
+		
+		
+		Byte byteNum = scanner.nextByte();
+		System.out.println("bytenum: " + byteNum);
+		
+		int intNum = scanner.nextInt();                       // *****
+		System.out.println("intNum: " + intNum);
+		
+		long longNum = scanner.nextLong();
+		System.out.println("longNum: " + longNum);
+		
+		float floatNum = scanner.nextFloat();                 // *****
+		System.out.println("floatNum: " + floatNum);
+		
+		boolean booleanData = scanner.nextBoolean();
+		System.out.println("booleanData: " + booleanData);
+		
+		scanner.close();      // 외부자원을 꼭 해제시켜야됌
+		
+		String str5 = new String("Hello");
+		String str6 = new String("Hello");
+		
+		System.out.println(str5.equals(str6));  // true
+		
+		str5 = null;
+		System.out.println(str5.equals(str6));  // Error
+		
+		str5 = null;
+		if (str5 != null) {
+			System.out.println(str5.equals(str6));
+		}
+		
+	}
+		
+}
+

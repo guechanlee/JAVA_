@@ -1,0 +1,15 @@
+package com.office.example;
+
+public class DataType {
+
+	public static void main(String[] args) {
+		System.out.println("This class is DataType.");
+
+		/*
+		 * 데이터 타입(Data Type) == 자료형
+		 * 데이터 타입이란, 메모리에 데이터가 저장될 때 데이터에 따라서 할당 받는 메모리 크기가 다르게 되는데요,
+		 * 예를 들어 정수는 1~8byte, 실수는 4 ~ 8byte의 크기가 할당됩니다.
+		 */
+	}
+
+}

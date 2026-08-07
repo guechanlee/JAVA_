@@ -1,0 +1,120 @@
+package com.office.example;
+
+import java.util.Scanner;
+
+public class Condition {
+
+	public static void main(String[] args) {
+		
+		/*
+		 * if문
+		 * if (조건식) {
+		 *  조건식의 결과가 true인 경우 실행되는 실행구문
+		 * }
+		 */
+//	 --------------------사진 ------------------------------
+		
+		Scanner scanner = new Scanner(System.in);
+//		
+//		int num = scanner.nextInt();
+//		if (num > 10) {
+//			System.out.printf("%d은 10보다 크다.\n", num);
+//		} 
+		
+		/*
+		 * if문 => if ~ else문, if ~ else if문
+		 */
+		
+		// 시험 점수가 70점 이상이면 '합격'을 출력하고
+		// 그렇지 않으면 '불합격'을 출력하자.
+		
+//		int userScore = scanner.nextInt();
+//		if (userScore >= 70) {
+//			System.out.println("합격!");
+//		} else {
+//			System.out.println("불합격!");
+//		}
+		
+		//삼항연산자
+//		String result = userScore >= 70 ? "합격!" : "불합격!";
+//		System.out.println(result);
+//		scanner.close();
+		
+		/*
+		 * 시험점수가
+		 * 90이상 이면 'A'
+		 * 80이상 90미만 'B'
+		 * 70이상 80미만 'C'
+		 * 60이상 70미만 'D'
+		 * 60미만이면 'F'
+		 */
+//		
+		
+//		int studentScore = scanner.nextInt();
+//
+//		if (studentScore >= 90) {
+//			System.out.println('A');
+//		} else if (studentScore >= 80 ) {
+//			System.out.println('B');
+//		} else if (studentScore >= 70 ) {
+//			System.out.println('C');
+//		} else if (studentScore >= 60 ) {
+//			System.out.println('D');
+//		} else {
+//			System.out.println('F');
+//			
+//		}
+		
+		/*
+		 * switch ~ case
+		 * if ~ else if문하고 비슷하게 다중 비교를 할 수 있다.
+		 * 하지만 오해하면 안된다. if ~ else if문하고 동일하지는 않다.
+		 * switch(조건식){
+		 *  case 값:
+		 *   실행문
+		 *   break;
+		 */
+		
+		
+		final int CASE1 = 1;
+		final int CASE2 = 2;
+		final int CASE3 = 3;
+		final int CASE4 = 4;
+		final int CASE5 = 5;
+		
+		
+	    //스위치는 if문과 다르게 해당 케이스를 지정한다
+		// 메뉴: 1.절전모드   2.시스템종료   3.다시시작    4.잠금
+		System.out.println("1.절전모드   2.시스템종료   3.다시시작    4.잠금");
+		int selectedNumber = scanner.nextInt();
+		switch (selectedNumber) {
+		case 1:
+			System.out.println("절전모드 중...");
+			break;
+			
+		case 2:
+			System.out.println("시스템종료!!");
+			break;
+	
+		case 3:
+			System.out.println("다시사작 중...");
+			break;
+
+		case 4:
+			System.out.println("잠금");
+			break;
+			
+		default:
+			System.out.println("잘못입력했어요.");
+			break;
+		}
+		
+		
+		
+		
+		
+		
+		scanner.close();
+	}
+
+}

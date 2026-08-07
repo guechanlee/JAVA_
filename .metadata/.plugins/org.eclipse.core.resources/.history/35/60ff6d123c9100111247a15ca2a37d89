@@ -1,0 +1,27 @@
+package com.office.example;
+
+import java.util.Scanner;
+
+public class Condition {
+
+	public static void main(String[] args) {
+		
+		/*
+		 * if문
+		 * if (조건식) {
+		 *  조건식의 결과가 true인 경우 실행되는 실행구문
+		 * }
+		 */
+//	 --------------------사진 ------------------------------
+		
+		Scanner scanner = new Scanner(System.in);
+		
+		int num = scanner.nextInt();
+		if (num > 10) {
+			System.out.printf("%d은 10보다 크다.\n", num);
+		} else System.out.printf("%d은 10보다 작다\n", num);
+				
+		scanner.close();
+	}
+
+}

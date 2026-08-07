@@ -1,0 +1,70 @@
+package com.office.example;
+
+import java.util.Scanner;
+
+public class Condition {
+
+	public static void main(String[] args) {
+		
+		/*
+		 * if문
+		 * if (조건식) {
+		 *  조건식의 결과가 true인 경우 실행되는 실행구문
+		 * }
+		 */
+//	 --------------------사진 ------------------------------
+		
+		Scanner scanner = new Scanner(System.in);
+//		
+//		int num = scanner.nextInt();
+//		if (num > 10) {
+//			System.out.printf("%d은 10보다 크다.\n", num);
+//		} 
+		
+		/*
+		 * if문 => if ~ else문, if ~ else if문
+		 */
+		
+		// 시험 점수가 70점 이상이면 '합격'을 출력하고
+		// 그렇지 않으면 '불합격'을 출력하자.
+		
+		int userScore = scanner.nextInt();
+//		if (userScore >= 70) {
+//			System.out.println("합격!");
+//		} else {
+//			System.out.println("불합격!");
+//		}
+		
+		//삼항연산자
+		String result = userScore >= 70 ? "합격!" : "불합격!";
+		System.out.println(result);
+		scanner.close();
+		
+		/*
+		 * 시험점수가
+		 * 90이상 이면 'A'
+		 * 80이상 90미만 'B'
+		 * 70이상 80미만 'C'
+		 * 60이상 70미만 'D'
+		 * 60미만이면 'F'
+		 */
+//		
+		
+		int studentScore = scanner.nextInt();
+
+		if (studentScore >= 90) {
+			System.out.println('A');
+		} else if (studentScore >= 80 ) {
+			System.out.println('B');
+		} else if (studentScore >= 70 ) {
+			System.out.println('C');
+		} else if (studentScore >= 60 ) {
+			System.out.println('D');
+		} else {
+			System.out.println('F');
+			
+		}
+		scanner.close();
+	}
+
+}

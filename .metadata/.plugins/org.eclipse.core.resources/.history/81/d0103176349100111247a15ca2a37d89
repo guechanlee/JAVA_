@@ -1,0 +1,25 @@
+package com.office.example;
+
+public class Operator03 {
+
+	public static void main(String[] args) {
+		
+		/*
+		 * 논리 연산자
+		 * &&(AND), ||(OR), !(NOT)
+		 * A && B: A와 B가 모두 true인 경우 결과값은 true이다.
+		 * A || B: A또는 B중 하나라도 true일 경우 결과값이 true이다.
+		 * !A: A의 현재 상태를 부정한다.
+		 */
+		
+		int num1 = 10;
+		int num2 = 20;
+		int num3 = 30;
+		
+		boolean result = false;
+		
+		(num1 < num3) && (num2 < num3);
+
+	}
+
+}

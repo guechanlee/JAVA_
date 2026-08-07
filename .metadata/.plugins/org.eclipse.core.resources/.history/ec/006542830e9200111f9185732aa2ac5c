@@ -1,0 +1,21 @@
+package com.office.example;
+
+public class Cat {
+	
+	// 멤버 변수 == 속성 == attribute
+	String breed;
+	String color;
+	
+	// 멤버 메서드 == 기능 == method
+	void eat() {
+		
+	}
+	
+	void scratch() {
+		
+	}
+	
+	void meow() {
+		
+	}
+}

@@ -1,0 +1,21 @@
+package com.office.example;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		
+		/*
+		 * 데이터 출력
+		 */
+		int num = 10;
+		
+		System.out.println("num: " + num);   // num: 10
+		System.out.println("num: " + num);   // num: 10
+		
+		System.out.print("num: " + num + "\n");    // num: 10
+		System.out.println("num: " + num);     	   // num: 10
+	
+	}
+		
+}
+

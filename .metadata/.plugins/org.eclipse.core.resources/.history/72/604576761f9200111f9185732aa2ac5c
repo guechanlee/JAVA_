@@ -1,0 +1,14 @@
+package com.office.example;
+
+public class Example02 {
+	
+	// 멤버 필드
+	static String name = "홍길동";
+	
+	public static void main(String[] args) {
+		
+		System.out.println("name: " + name);
+		
+	}
+	
+}

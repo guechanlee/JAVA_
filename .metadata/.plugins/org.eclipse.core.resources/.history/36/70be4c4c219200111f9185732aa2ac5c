@@ -1,0 +1,18 @@
+package com.office.example;
+
+public class Student {
+	
+	int id;
+	String name;
+	
+	void insertRecord(int id, String name) {
+		this.id = id;
+		this.name = name;
+	}
+	
+	void printInfo() {
+		System.out.println("아이디: " + id);
+		System.out.println("이름: " + name);
+	}
+	
+}
