@@ -67,7 +67,6 @@ public class MemberController {
 				
 				memberDto = new MemberDto(memId, memPw, null);
 				memberService.doSignIn(memberDto);
-				get
 				break;
 				
 			case 4:  				// DELETE

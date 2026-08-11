@@ -10,6 +10,7 @@ public class MemberDao {
 	public void insertMember(MemberDto memberDto) {
 		System.out.println("[MemberDao] inserMember()");
 		
+		// 저장
 		memberDB.add(memberDto);
 		
 	}
@@ -28,3 +29,4 @@ public class MemberDao {
 	}
 	
 }
+

@@ -3,9 +3,9 @@ package com.office.member;
 public class MemberService {
 
 	MemberDao memberDao = new MemberDao();
-	MemberService doModify = new DoModify();
 	
-	// sign-up
+	
+	// sign-up 데이터베이스를 Dto를 Dao에게 임계
 	public void doSignUp(MemberDto memberDto) {
 		System.out.println("[MemberService] doSignUp()");
 		
