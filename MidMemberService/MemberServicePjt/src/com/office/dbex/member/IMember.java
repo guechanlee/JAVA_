@@ -7,7 +7,6 @@ public interface IMember {
 	final public int MEMBER_SIGN_IN		= 2;
 	final public int MEMBER_MODIFY		= 3;
 	final public int MEMBER_DELETE		= 4;
-	final public int MEMBER_SIGN_OUT	= 5;
 	
 	// Result
 	final public int MEMBER_SIGN_UP_SUCCESS = 1;

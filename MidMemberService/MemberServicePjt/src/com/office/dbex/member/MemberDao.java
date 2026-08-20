@@ -9,7 +9,6 @@ import java.util.ArrayList;
 
 public class MemberDao implements IMemberDao {
 	
-	@Override
 	public int insertNewMember(MemberDto memberDto) {
 		System.out.println("[MemberDao] insertNewMember()");
 		
@@ -66,7 +65,7 @@ public class MemberDao implements IMemberDao {
 		return result;  // -1
 		
 	}
-	@Override
+
 	public MemberDto selectMemberByMemId(String id) {
 		System.out.println("[MemberDao] selectMemberByMemId()");
 		
@@ -98,7 +97,7 @@ public class MemberDao implements IMemberDao {
 			// 5. 작업 지시(run or execute)
 			rs = pstmt.executeQuery();
 			
-			while (rs.next()) {   // ResultSet => DTO Mapping: RowMapper
+			while (rs.next()) {
 				int memNo = rs.getInt("memNo");
 				String memId = rs.getString("memId");
 				String memPw = rs.getString("memPw");
@@ -133,108 +132,6 @@ public class MemberDao implements IMemberDao {
 		}
 		
 		return dtos.size() > 0 ? dtos.get(0) : null;
-		
-	}
-	
-	@Override
-	public int updateMember(MemberDto memberDto) {
-		System.out.println("[MemberDao] updateMember()");
-		
-		Connection conn = null;
-		PreparedStatement pstmt = null;
-		int result = -1;
-		
-		try {
-			// 1. Connect 객체 생성 (App과 DB Server 연결, 다리 건설)
-			conn = DriverManager.getConnection(URL, USER, PASSWORD);
-			
-			// 2. 작업 명세서(SQL)
-			String sql =  "UPDATE "
-							+ "TBL_MEMBER "
-						+ "SET "
-							+ "memPw = ?, "
-							+ "memMail = ?, "
-							+ "memPhone = ? "
-						+ "WHERE "
-							+ "memId= ?";
-			
-			// 3. 일꾼
-			pstmt = conn.prepareStatement(sql);
-			
-			// 4. 데이터 주입
-			pstmt.setString(1, memberDto.getMemPw());
-			pstmt.setString(2, memberDto.getMemMail());
-			pstmt.setString(3, memberDto.getMemPhone());
-			pstmt.setString(4, memberDto.getMemId());
-			
-			// 5. 작업 지시(run or execute)
-			result = pstmt.executeUpdate();  // 0 또는 1 또는 2, 3, 4
-			
-		} catch (SQLException e) {
-			e.printStackTrace();
-			
-		} finally {
-			
-			// 6. 외부 자원 해제
-			try {
-				if (pstmt != null) pstmt.close();
-				if (conn != null) conn.close();
-				
-			} catch (SQLException e) {
-				e.printStackTrace();
-			}
-			
-		}
-		
-		return result;
-		
-	}
-
-	@Override
-	public int deleteMemberByMemId(String memId) {
-		System.out.println("[MemberDao] deleteMemberByMemId()");
-		
-		Connection conn = null;
-		PreparedStatement pstmt = null;
-		int result = -1;
-		
-		try {
-			// 1. Connect 객체 생성 (App과 DB Server 연결, 다리 건설)
-			conn = DriverManager.getConnection(URL, USER, PASSWORD);
-			
-			// 2. 작업 명세서(SQL)
-			String sql =  "DELETE FROM"
-							+ " TBL_MEMBER"
-						+ " WHERE " 
-							+ "memId = ?";
-			
-			// 3. 일꾼
-			pstmt = conn.prepareStatement(sql);
-			
-			// 4. 데이터 주입
-			pstmt.setString(1, memId);
-		
-			
-			// 5. 작업 지시(run or execute)
-			result = pstmt.executeUpdate();  // 0 또는 1 또는 2, 3, 4 
-			
-		} catch (SQLException e) {
-			e.printStackTrace();
-			
-		} finally {
-			
-			// 6. 외부 자원 해제
-			try {
-				if (pstmt != null) pstmt.close();
-				if (conn != null) conn.close();
-				
-			} catch (SQLException e) {
-				e.printStackTrace();
-			}
-			
-		}
-		
-		return result;
 		
 	}
 

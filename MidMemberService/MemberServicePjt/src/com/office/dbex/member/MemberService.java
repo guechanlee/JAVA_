@@ -1,17 +1,8 @@
 package com.office.dbex.member;
 
-import com.office.dbex.session.SessionClass;
-
 public class MemberService implements IMember {
 
-//	IMemberDao memberDao = new MemberDao();
-//	IMemberDao memberDao = new MemberDaoForOracle();
-	
-	IMemberDao memberDao;
-	
-	public MemberService(IMemberDao iMemberDao) {
-		this.memberDao = iMemberDao;
-	}
+	MemberDao memberDao = new MemberDao();
 	
 	// sign-up
 	public int doSignUp(MemberDto memberDto) {
@@ -88,48 +79,4 @@ public class MemberService implements IMember {
 		
 	}
 
-	// modify
-	public int doModify(MemberDto memberDtoForModify) {		// id, pw, mail, phone
-		System.out.println("[MemberService] doModify()");
-		
-		memberDtoForModify.setMemId(SessionClass.getInstance().getSignInedMemberId());
-		
-		int result = memberDao.updateMember(memberDtoForModify);
-		
-		if (result > 0) {
-			System.out.println("[MemberService] MEMBER MODIFY SUCCESS!");
-			
-		} else {
-			System.out.println("[MemberService] MEMBER MODIFY FAIL!");
-			
-		}
-		
-		return result;
-		
-	}
-
-	public int doRemove() {
-		System.out.println("[MemberService] doRemove()");
-		
-		int result = memberDao.deleteMemberByMemId(SessionClass.getInstance().getSignInedMemberId());
-		
-		if (result > 0) {
-			System.out.println("[MemberSerivice] MEMBER DELETE SUCCESS!!");
-		} else {
-			System.out.println("[MemberSerivice] MEMBER DELETE FAIL!!");
-		}
-		
-		return result;
-		
-	}
-
 }
-
-
-
-
-
-
-
-
-

@@ -1,5 +1,8 @@
 package com.office.dbex;
 
+import java.sql.Connection;
+import java.sql.DriverManager;
+
 import com.office.dbex.member.MemberController;
 
 public class MainClass {
